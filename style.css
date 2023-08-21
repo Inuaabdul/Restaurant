@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0C0B08;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 7.5rem;
+}
+
+header h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.topright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topright a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: .8px;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+.topright .book,
+.topright img {
+    padding-left: 1.875rem
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 120px);
+    margin-bottom: 80px;
+    padding: 0 60px;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    gap: 2.5rem;
+    color: #FFFFFF;
+    width: 20%;
+    margin-left: -8%;
+}
+
+.left h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .045rem;
+}
+
+.right {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 24px;
+    color: var(--dcca-87, #DCCA87);
+    width: 15%;
+}
+
+.right h2 {
+    margin-right: -25px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+    width: 85%;
+}
+
+.center-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+.ct-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 50%;
+    padding-right: 60px;
+}
+
+.ct-left h2 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: .92px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.ct-left h3 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: .225rem;
+    text-transform: capitalize;
+    color: var(--dcca-87, #DCCA87);
+    padding: 20px 0px 40px 0px;
+}
+
+.ct-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    color: var(--aaaaaa, #AAA);
+}
+
+.ct-left button {
+    width: 180px;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .64px;
+    color: #0C0B08;
+    background: var(--dcca-87, #DCCA87);
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.ct-right {
+    width: 55%;
+    position: relative;
+}
+
+.ct-right img {
+    padding-left: 10%;
+    width: 90%;
+    height: 80%;
+}
+
+.ct-right::after {
+    content: url(../restaurant/pics/rect.svg);
+    position: absolute;
+    left: 25px;
+    bottom: -20px;
+    z-index: -1;
+}
+
+.ct-right .ct-2 {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 55px;
+    bottom: 115px;
+    z-index: -2;
+}
+
+.center-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 8px;
+    height: 10%;
+}
+
+.center-bottom img {
+    width: 40px;
+    height: 15px;
+    transform: rotate(-90deg);
+    gap: 5px;
+}
+
+.about {
+    background-image: url(../restaurant/pics/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 160px;
+    position: relative;
+    z-index: 1;
+}
+
+.about .img {
+    position: absolute;
+    z-index: -1;
+    left: 37%;
+    width: 391px;
+    ;
+}
+
+.about-left,
+.about-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32px;
+}
+
+.about-left h2,
+.about-right h2 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .12rem;
+    text-transform: capitalize;
+    color: var(--dcca-87, #DCCA87);
+}
+
+.about-left p,
+.about-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .64px;
+    color: var(--aaaaaa, #AAA);
+    width: 500px;
+    text-align: right;
+
+}
+
+.about-left button,
+.about-right button {
+    padding: .5rem 2rem;
+    background: var(--dcca-87, #DCCA87);
+    border: none;
+    outline: none;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .04rem;
+    color: var(--0-c-0-c-0-c, #0C0C0C);
+    cursor: pointer;
+}
+
+.about-right {
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.about-right p {
+    text-align: left;
+}
+
+.about-center img {
+    height: 703px;
+    padding: 0rem 5rem;
+}
+
+.t-special {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.75rem 160px;
+    gap: 4rem;
+}
+
+.t-special1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem
+}
+
+.t-special1 h4 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    letter-spacing: .0575rem;
+    text-transform: capitalize;
+    color: var(--ffffff, #FFF);
+}
+
+.t-special1 h2 {
+    text-align: center;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: .16rem;
+    text-transform: capitalize;
+    color: var(--dcca-87, #DCCA87);
+}
+
+.t-special2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.t-special21,
+.t-special23 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.t-special21 h2,
+.t-special23 h2 {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 2.8125rem;
+    font-weight: 600;
+    letter-spacing: .1125rem;
+    text-transform: capitalize;
+}
+
+.menu21 {
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+/* .men1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5rem;
+} */
+
+.men1 .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+
+}
+
+.men1 h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    text-align: left;
+    color: var(--aaaaaa, #AAA);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.men1 .top h2,
+.men1 .top h3 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.4375rem;
+    font-weight: 700;
+    letter-spacing: .0575rem;
+    text-transform: capitalize;
+    color: var(--dcca-87, #DCCA87);
+    text-align: left;
+}
+
+.men1 .top h3 {
+    color: var(--ffffff, #FFF);
+
+}
+
+.t-special3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-special3 button {
+    width: auto;
+    height: auto;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .04rem;
+    color: var(--0-c-0-c-0-c, #0C0C0C);
+    background: var(--dcca-87, #DCCA87);
+    padding: .5rem 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+main {
+    height: calc(100vh - 7.5rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.hashtag {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transform: rotate(-90deg);
+
+}
+
+.hashtag h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .045rem;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 35%;
+    padding-top: calc(20% - 120px);
+    padding-bottom: calc(20% - 120px);
+    padding-left: 60px;
+}
+
+.content-left h2 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: .92px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.content-left h3 {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: .225rem;
+    text-transform: capitalize;
+    color: var(--dcca-87, #DCCA87);
+    padding: 28px 0px;
+}
+
+.content-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .04rem;
+    color: var(--aaaaaa, #AAA);
+    padding-bottom: 28px;
+}
+
+.content-left button {
+    width: 180px;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .64px;
+    color: #0C0B08;
+    background: var(--dcca-87, #DCCA87);
+    padding: 8px 32px;
+    border: none;
+    outline: none;
+}
+
+.content-right {
+    width: 50%;
+}
+
+.content-right img {
+    width: 100%;
+    height: 80%;
+    padding-left: 15%;
+}
+
+.hash2 {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    color: var(--dcca-87, #DCCA87);
+    padding-left: 60px;
+}
+
+.slider {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+} */

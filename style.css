@@ -702,6 +702,7 @@ nav ul li a {
     width: 100%;
     height: 160vh;
     background: #0C0B08;
+    margin-bottom: 10%;
 }
 
 .gallery {
@@ -831,6 +832,28 @@ nav ul li a {
 
 .find-us {
     width: 100%;
+}
+
+.footer {
+    background-image: url(../restaurant/pics/about.jpg);
+    background-color: #040404;
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+}
+
+.ft-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.ft-main .main-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 

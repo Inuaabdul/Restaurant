@@ -193,8 +193,8 @@ nav ul li a {
 .ct-right::after {
     content: url(../restaurant/pics/rect.svg);
     position: absolute;
-    left: 30px;
-    bottom: -15px;
+    left: 5%;
+    bottom: -5%;
     z-index: -1;
 }
 
@@ -202,8 +202,8 @@ nav ul li a {
     position: absolute;
     width: 90%;
     height: 80%;
-    left: 35px;
-    bottom: 100px;
+    right: 0;
+    top: -5%;
     z-index: -2;
 }
 
@@ -452,7 +452,7 @@ nav ul li a {
 
 .chef-left {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -461,8 +461,8 @@ nav ul li a {
 }
 
 .chef-left img {
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    /* height: 80%; */
 }
 
 
@@ -471,17 +471,18 @@ nav ul li a {
     z-index: -1;
     width: 80%;
     height: 75%;
-    top: -15px;
-    right: -20px;
+    top: -5%;
+    right: -5%;
 }
+
 
 .chef-left .img12 {
     position: absolute;
     z-index: -1;
     width: 80%;
     height: 75%;
-    left: -20px;
-    bottom: -15px;
+    left: -5%;
+    bottom: -5%;
 
 
 }
@@ -492,6 +493,7 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    width: 50%
 }
 
 .chef-right .right1 {
@@ -809,6 +811,7 @@ nav ul li a {
 
 .find0 {
     width: 90%;
+    padding: 2.75rem 100px
 }
 
 .find {
@@ -838,7 +841,7 @@ nav ul li a {
 }
 
 .find-us {
-    width: 100%;
+    width: 50%;
 }
 
 .footer {
@@ -1238,12 +1241,93 @@ nav ul li a {
     }
 
     .dropdown svg path {
-        fill: #DCCA87
+        fill: #FFFFFF
     }
 
     nav,
     .topright {
         display: none
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 25px 30px
+    }
+
+    .main {
+        padding: 0 30px
+    }
+
+    .center-top {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .ct-left {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .ct-right {
+        width: 100%;
+    }
+
+    .ct-left h3,
+    .ct-left p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .ct-left p {
+        font-size: 14px
+    }
+
+    .ct-right img {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .ct-right::after {
+        display: none;
+    }
+
+    .about {
+        padding: 0 30px;
+        flex-direction: column;
+    }
+
+    .about-center {
+        height: 30vh;
+    }
+
+    .about-center img {
+        padding: 0;
+        width: 70px;
+        height: 40vh;
+        transform: rotate(-45deg);
+    }
+
+    .about .img {
+        left: 5%;
+    }
+
+    .t-special {
+        padding: 10px 30px;
+        height: 180vh;
+    }
+
+
+    .t-special2 {
+        flex-direction: column;
+    }
+
+    .t-special22 img {
+        height: 40vh;
     }
 
 }

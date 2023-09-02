@@ -1256,9 +1256,30 @@ nav ul li a {
         fill: #FFFFFF
     }
 
-    nav,
     .topright {
-        display: none
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: color-mix(in srgb, #040404, transparent 30%);
+        width: 100%;
+        height: auto;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1000;
+        padding: 20px 0px;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav.active {
+        left: 0;
     }
 
 }
@@ -1267,6 +1288,10 @@ nav ul li a {
     header {
         padding: 25px 30px;
         height: 6.25rem;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        background-color: #040404;
     }
 
     header h1 {

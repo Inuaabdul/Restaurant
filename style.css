@@ -1460,6 +1460,10 @@ nav ul li a {
         height: 60%;
     }
 
+    .award1 .mid {
+        flex-wrap: wrap;
+    }
+
     .award12 {
         gap: 1.5rem;
     }
@@ -1537,7 +1541,7 @@ nav ul li a {
     .ft-main .main-top {
         flex-direction: column;
         height: auto;
-        gap: 1.25rem;
+        gap: 40px;
     }
 
     .ft-left,

@@ -13,19 +13,19 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    padding: 32px 60px;
+    padding: 2rem 3.75rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: 7.5rem;
 }
 
 header h1 {
     color: #FFF;
     text-transform: uppercase;
-    letter-spacing: 1.76px;
+    letter-spacing: .11rem;
     font-family: 'Cormorant Upright', serif;
-    font-size: 44px;
+    font-size: 2.75rem;
     font-style: normal;
     font-weight: 700;
 
@@ -36,7 +36,7 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 
 }
 
@@ -60,8 +60,8 @@ nav ul li a {
     text-decoration: none;
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    letter-spacing: .05rem;
+    font-size: 16px;
+    letter-spacing: .8px;
     text-transform: capitalize;
     font-weight: 600;
 
@@ -69,7 +69,7 @@ nav ul li a {
 
 .topright .book,
 .topright img {
-    padding-left: 30px
+    padding-left: 1.875rem
 }
 
 .dropdown {
@@ -83,9 +83,9 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: calc(100vh - 7.5rem);
-    margin-bottom: 5rem;
-    padding: 0 3.75rem;
+    height: calc(100vh - 120px);
+    margin-bottom: 80px;
+    padding: 0 60px;
 }
 
 .left {
@@ -94,7 +94,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     transform: rotate(-90deg);
-    gap: 40px;
+    gap: 2.5rem;
     color: #FFFFFF;
     width: 20%;
     margin-left: -8%;
@@ -102,9 +102,9 @@ nav ul li a {
 
 .left h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 400;
-    letter-spacing: .72px;
+    letter-spacing: .045rem;
 }
 
 .right {
@@ -112,13 +112,13 @@ nav ul li a {
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end;
-    gap: 1.5rem;
+    gap: 24px;
     color: var(--dcca-87, #DCCA87);
     width: 15%;
 }
 
 .right h2 {
-    margin-right: -1.5625rem;
+    margin-right: -25px;
 }
 
 .center {
@@ -126,7 +126,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 7.5rem);
+    height: calc(100vh - 120px);
     width: 85%;
 }
 
@@ -136,6 +136,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 90%;
+    width: 100%;
 }
 
 .ct-left {
@@ -144,14 +145,14 @@ nav ul li a {
     justify-content: center;
     color: white;
     width: 50%;
-    padding-right: 3.75rem;
+    padding-right: 60px;
 }
 
 .ct-left h2 {
     font-family: 'Cormorant Upright', serif;
-    font-size: 1.4375rem;
+    font-size: 23px;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
     color: #FFFFFF;
 
@@ -159,25 +160,25 @@ nav ul li a {
 
 .ct-left h3 {
     font-family: 'Cormorant Upright', serif;
-    font-size: 3.125rem;
+    font-size: 50px;
     font-weight: 700;
-    letter-spacing: 3.6px;
+    letter-spacing: .225rem;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
-    padding: 1.25rem 0rem 2.5rem 0rem;
+    padding: 20px 0px 40px 0px;
 }
 
 .ct-left p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: .64px;
+    letter-spacing: .04rem;
     color: var(--aaaaaa, #AAA);
 }
 
 .ct-left button {
-    width: 11.25rem;
-    margin-top: 2.5rem;
+    width: 180px;
+    margin-top: 40px;
 }
 
 .ct-right {
@@ -187,25 +188,35 @@ nav ul li a {
 
 .ct-right img {
     padding-left: 10%;
-    width: 90%;
+    width: 100%;
     height: 80%;
 }
 
-.ct-right::after {
+/* 
+.ct-right ::after {
     content: url(../restaurant/pics/rect.svg);
     position: absolute;
     left: 5%;
     bottom: -5%;
     z-index: -1;
-}
+} */
 
 .ct-right .ct-2 {
     position: absolute;
     width: 90%;
     height: 80%;
-    right: 0;
-    top: -5%;
+    right: -3%;
+    top: -3%;
     z-index: -2;
+}
+
+.ct-right .ct-1 {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    z-index: -4;
+    left: -3%;
+    bottom: -3%;
 }
 
 .center-bottom {
@@ -214,15 +225,15 @@ nav ul li a {
     align-items: flex-end;
     justify-content: center;
     color: #FFFFFF;
-    gap: .5rem;
+    gap: 8px;
     height: 10%;
 }
 
 .center-bottom img {
-    width: 2.5rem;
-    height: .9375rem;
+    width: 40px;
+    height: 15px;
     transform: rotate(-90deg);
-    gap: .3125rem;
+    gap: 5px;
 }
 
 .about {
@@ -235,7 +246,7 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1.25rem 7.5rem;
+    padding: 20px 120px;
     position: relative;
     z-index: 1;
 }
@@ -254,16 +265,16 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
     width: auto;
 }
 
 .about-left h2,
 .about-right h2 {
     font-family: 'Cormorant Upright', serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 500;
-    letter-spacing: 1.92px;
+    letter-spacing: .12rem;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
 }
@@ -271,9 +282,9 @@ nav ul li a {
 .about-left p,
 .about-right p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     color: var(--aaaaaa, #AAA);
     width: 80%;
     text-align: right;
@@ -284,14 +295,14 @@ nav ul li a {
 .about-right button,
 .t-special3 button,
 .ct-left button {
-    padding: 8px 32px;
+    padding: .5rem 2rem;
     background: var(--dcca-87, #DCCA87);
     border: none;
     outline: none;
     font-family: 'Cormorant Upright', serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: .64px;
+    letter-spacing: .04rem;
     color: var(--0-c-0-c-0-c, #0C0C0C);
     cursor: pointer;
 }
@@ -307,7 +318,7 @@ nav ul li a {
 
 .about-center img {
     height: 80vh;
-    padding: 0px 64px;
+    padding: 0rem 4rem;
 }
 
 .t-special {
@@ -317,7 +328,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 44px 10rem;
+    padding: 2.75rem 160px;
 
 }
 
@@ -326,15 +337,15 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     height: 100%;
 }
 
 .t-special1 h4 {
     font-family: 'Cormorant Upright', serif;
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-weight: 700;
-    letter-spacing: .92px;
+    letter-spacing: .0575rem;
     text-transform: capitalize;
     color: var(--ffffff, #FFF);
 }
@@ -342,9 +353,9 @@ nav ul li a {
 .t-special1 h2 {
     text-align: center;
     font-family: 'Cormorant Upright', serif;
-    font-size: 54px;
+    font-size: 3.375rem;
     font-weight: 500;
-    letter-spacing: 2.56px;
+    letter-spacing: .16rem;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
 }
@@ -354,7 +365,7 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 2rem;
     width: 100%;
 }
 
@@ -368,7 +379,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .t-special21 h2,
@@ -376,14 +387,14 @@ nav ul li a {
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: 'Cormorant Upright', serif;
-    font-size: 2.1875rem;
+    font-size: 35px;
     font-weight: 600;
-    letter-spacing: 1.8px;
+    letter-spacing: .1125rem;
     text-transform: capitalize;
 }
 
 .menu21 {
-    gap: 24px;
+    gap: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -395,14 +406,14 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
 
 }
 
 .men1 h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: .64px;
+    letter-spacing: .04rem;
     text-align: left;
     color: var(--aaaaaa, #AAA);
     font-family: 'Open Sans', sans-serif;
@@ -412,9 +423,9 @@ nav ul li a {
 .men1 .top h2,
 .men1 .top h3 {
     font-family: 'Cormorant Upright', serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 500;
-    letter-spacing: .92px;
+    letter-spacing: .0575rem;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
     text-align: left;
@@ -439,7 +450,7 @@ nav ul li a {
     background-image: url(../restaurant/pics/about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 44px 10rem;
+    padding: 2.75rem 160px;
 }
 
 .chef-main {
@@ -448,7 +459,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 6rem;
+    gap: 96px;
 }
 
 .chef-left {
@@ -463,7 +474,8 @@ nav ul li a {
 
 .chef-left img {
     width: 100%;
-    /* height: 80%; */
+    max-height: 90%;
+    min-height: 70%;
 }
 
 
@@ -472,8 +484,8 @@ nav ul li a {
     z-index: -1;
     width: 80%;
     height: 75%;
-    top: -5%;
-    right: -5%;
+    top: -3%;
+    right: -3%;
 }
 
 
@@ -482,8 +494,8 @@ nav ul li a {
     z-index: -1;
     width: 80%;
     height: 75%;
-    left: -5%;
-    bottom: -5%;
+    left: -3%;
+    bottom: -3%;
 
 
 }
@@ -493,7 +505,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 24px;
     width: 50%
 }
 
@@ -502,14 +514,14 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 8px;
 }
 
 .chef-right .right1 h2 {
     font-family: 'Cormorant Upright', serif;
-    font: size 1.4375rem;
+    font: size 23px;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
     color: var(--ffffff, #FFF);
 }
@@ -517,9 +529,9 @@ nav ul li a {
 .chef-right .right1 h3 {
     color: var(--dcca-87, #DCCA87);
     font-family: 'Cormorant Upright', serif;
-    font-size: 2.8125rem;
+    font-size: 45px;
     font-weight: 600;
-    letter-spacing: .12rem;
+    letter-spacing: 1.92px;
     text-transform: capitalize;
 }
 
@@ -531,42 +543,42 @@ nav ul li a {
 .chef-right .right2 p {
     color: var(--aaaaaa, #AAA);
     font-family: 'Open Sans';
-    font-size: .75rem;
+    font-size: 12px;
     font-weight: 400;
     font-style: italic;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
 }
 
 .chef-right .right3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 8px;
 }
 
 .chef-right .right3 h4 {
     color: var(--dcca-87, #DCCA87);
     font-family: 'Cormorant Upright';
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 400;
-    letter-spacing: .08rem;
+    letter-spacing: 1.28px;
     text-transform: capitalize;
 }
 
 .chef-right .right3 h5 {
     color: var(--aaaaaa, #AAA);
     font-family: 'Open Sans';
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
 }
 
 .chef-right .right4 h2 {
     color: var(--aaaaaa, #AAA);
     font-family: 'Bestermind', sans-serif;
-    font-size: 4rem;
+    font-size: 64px;
     font-weight: 400;
-    letter-spacing: .16rem;
+    letter-spacing: 2.56px;
 }
 
 .video {
@@ -598,20 +610,20 @@ nav ul li a {
 }
 
 .award img {
-    padding: 2.5rem 0rem 0rem 2.5rem;
-    width: 6.25rem;
-    height: 6.25rem;
+    padding: 40px 0px 0px 40px;
+    width: 100px;
+    height: 100px;
 }
 
 .award-main {
     width: 100%;
     height: 100%;
-    padding: 3.125rem 10% 3.125rem 0;
+    padding: 50px 10% 50px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3.125rem;
+    gap: 50px;
 }
 
 .award1 {
@@ -620,7 +632,7 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 3.125rem;
+    gap: 50px;
 
 }
 
@@ -629,28 +641,28 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 8px;
     font-family: 'Cormorant Upright', sans-serif;
 }
 
 .award1 .mid {
     display: flex;
     flex-direction: row;
-    gap: 2rem
+    gap: 32px
 }
 
 .award11 h4 {
     color: var(--ffffff, #FFF);
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
 }
 
 .award11 h2 {
-    font-size: 3.375rem;
+    font-size: 54px;
     font-weight: 600;
-    letter-spacing: .12rem;
+    letter-spacing: 1.92px;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
 }
@@ -661,12 +673,12 @@ nav ul li a {
     align-items: flex-start;
     align-items: center;
     width: 100%;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .award12 img {
-    width: 4.375rem;
-    height: 4.375rem;
+    width: 70px;
+    height: 70px;
     padding: 0;
 }
 
@@ -674,23 +686,23 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: .5rem;
+    gap: 8px;
     width: 80%;
 }
 
 .award12 .right h3 {
     font-family: 'Cormorant Upright', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
 }
 
 .award12 .right p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12.8px;
+    font-size: .8rem;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     color: var(--aaaaaa, #AAA);
 }
 
@@ -728,8 +740,8 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 4rem;
-    padding: 1.875rem 0 .9375rem 2.5rem;
+    gap: 64px;
+    padding: 30px 0 15px 40px;
     width: 100%;
     height: 100%;
 }
@@ -739,22 +751,22 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Cormorant Upright', sans-serif;
-    width: 30.625rem;
-    gap: 1.125rem;
+    width: 490px;
+    gap: 18px;
 }
 
 .brief .top h2 {
-    font-size: 1.4375rem;
+    font-size: 23px;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
     color: var(--ffffff, #FFF);
 }
 
 .brief .top h3 {
-    font-size: 3.375rem;
+    font-size: 54px;
     font-weight: 600;
-    letter-spacing: .12rem;
+    letter-spacing: 1.92px;
     text-transform: capitalize;
     color: var(--dcca-87, #DCCA87);
 }
@@ -762,28 +774,28 @@ nav ul li a {
 .brief p {
     color: var(--aaaaaa, #AAA);
     font-family: 'Open Sans', sans-serif;
-    font-size: .75rem;
+    font-size: 12px;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
 }
 
 .brief h4,
 .find-us.right4 h4 {
-    width: 8.5rem;
-    height: 2.75rem;
+    width: 136px;
+    height: 44px;
 }
 
 .brief h4 a,
 .find-us .right4 h4 a {
     text-decoration: none;
-    border: .0625rem solid var(--dcca-87, #DCCA87);
+    border: 1px solid var(--dcca-87, #DCCA87);
     background: var(--dcca-87, #DCCA87);
     color: var(--0-c-0-c-0-c, #0C0C0C);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     font-family: Cormorant Upright;
-    padding: .5rem
+    padding: 8px
 }
 
 .slider .images img {
@@ -797,7 +809,7 @@ nav ul li a {
     justify-content: flex-start;
     overflow: scroll;
     scroll-behavior: smooth;
-    gap: 2rem;
+    gap: 32px;
     height: 50vh;
 }
 
@@ -806,39 +818,39 @@ nav ul li a {
 }
 
 .hover:hover {
-    border: .125rem solid rgba(220, 202, 135, 0.20);
+    border: 2px solid rgba(220, 202, 135, 0.20);
     background: linear-gradient(230deg, rgba(0, 0, 0, 0.75) 8.77%, rgba(0, 0, 0, 0.64) 79.13%);
 }
 
 .find0 {
     width: 90%;
-    padding: 44px 6.25rem
+    padding: 2.75rem 100px
 }
 
 .find {
     flex-direction: row-reverse;
-    gap: 7.5rem;
+    gap: 120px;
 }
 
 .find-leftmid {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .find-leftmid p {
     color: var(--aaaaaa, #AAA);
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
 }
 
 .find-us.right1 h3 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
-    letter-spacing: .16rem;
+    letter-spacing: 2.56px;
 }
 
 .find-us {
@@ -863,7 +875,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 64px;
     width: 100%;
     margin-top: 15%;
 }
@@ -881,24 +893,24 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
     color: var(--aaaaaa, #AAA);
     width: 25%;
 }
 
 .ft-left h2 {
     font-family: 'Cormorant Upright', sans-serif;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 400;
-    letter-spacing: .08rem;
+    letter-spacing: 1.28px;
     text-transform: capitalize;
 }
 
 .ft-left h3 {
-    font-size: .9375rem;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: .04rem;
-    line-height: 1.75rem;
+    letter-spacing: .64px;
+    line-height: 28px;
     text-align: center;
 }
 
@@ -907,12 +919,12 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 8px;
     font-family: 'Open Sans', sans-serif;
-    font-size: .9375rem;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: .04rem;
-    line-height: 1.75rem;
+    letter-spacing: .64px;
+    line-height: 28px;
 }
 
 .ft-mid {
@@ -920,16 +932,16 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .ft-mid h2 {
     color: var(--dcca-87, #DCCA87);
     text-align: center;
     font-family: 'Cormorant Upright', sans-serif;
-    font-size: 3.375rem;
+    font-size: 54px;
     font-weight: 700;
-    letter-spacing: .16rem;
+    letter-spacing: 2.56px;
     text-transform: uppercase;
 }
 
@@ -938,17 +950,17 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 16px;
     font-family: 'Open Sans', sans-serif;
     color: var(--ffffff, #FFF);
 }
 
 .ft-mid2 p {
-    font-size: .9375rem;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     text-align: center;
-    width: 27.375rem;
+    width: 438px;
 
 }
 
@@ -961,30 +973,30 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 24px;
     color: var(--aaaaaa, #AAA);
     width: 25%;
 }
 
 .ft-right2 {
-    gap: .5rem;
+    gap: 8px;
 }
 
 .ft-right h2 {
     font-family: 'Cormorant Upright', sans-serif;
-    font-size: 1.875rem;
+    font-size: 30px;
     font-weight: 400;
-    letter-spacing: .08rem;
+    letter-spacing: 1.28px;
     text-transform: capitalize;
 }
 
 .ft-right2 h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     text-align: center;
-    line-height: 1.75rem;
+    line-height: 28px;
 }
 
 .main-bottom {
@@ -992,10 +1004,10 @@ nav ul li a {
     align-items: center;
     text-align: center;
     font-family: Open Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.75rem;
-    letter-spacing: .04rem;
+    line-height: 28px;
+    letter-spacing: .64px;
     color: var(--aaaaaa, #AAA);
 }
 
@@ -1005,7 +1017,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 8px;
     z-index: 7;
     right: 5%;
     top: 20%;
@@ -1014,9 +1026,9 @@ nav ul li a {
 .scroll-top h2 {
     color: var(--dcca-87, #DCCA87);
     font-family: Cormorant Upright;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     text-transform: uppercase
 }
 
@@ -1025,13 +1037,13 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.125rem;
-    border: .0625rem solid rgba(220, 202, 135, 0.20);
+    gap: 50px;
+    border: 1px solid rgba(220, 202, 135, 0.20);
     background: var(--0-c-0-c-0-c, #0C0C0C);
-    box-shadow: 1.375rem 1.875rem 5.9375rem .0625rem rgba(0, 0, 0, 0.70);
+    box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.70);
     position: absolute;
     z-index: 10;
-    padding: 4rem 6.25rem;
+    padding: 64px 100px;
     top: -25%;
     width: 80%;
     height: 55%;
@@ -1043,29 +1055,29 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .news11 {
-    gap: .5rem;
+    gap: 8px;
 
 }
 
 .news11 h2 {
     color: var(--ffffff, #FFF);
     font-family: Cormorant Upright;
-    font-size: 1.4375rem;
+    font-size: 23px;
     font-weight: 700;
-    letter-spacing: .0575rem;
+    letter-spacing: .92px;
     text-transform: capitalize;
-    line-height: 1.8687rem;
+    line-height: 29.8992px;
 }
 
 .news11 h3 {
     font-family: Cormorant Upright;
-    font-size: 3.375rem;
+    font-size: 54px;
     font-weight: 600;
-    letter-spacing: .12rem;
+    letter-spacing: 1.92px;
     text-transform: capitalize;
     text-align: center;
     color: var(--dcca-87, #DCCA87);
@@ -1075,53 +1087,53 @@ nav ul li a {
     color: #FFF;
     text-align: center;
     font-family: Open Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.75rem;
-    letter-spacing: .04rem;
+    line-height: 28px;
+    letter-spacing: .64px;
 }
 
 .news2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 32px;
     width: 100%;
 }
 
 .news2 input {
-    border: .0625rem solid var(--f-5-efdb, #F5EFDB);
+    border: 1px solid var(--f-5-efdb, #F5EFDB);
     width: 50%;
-    height: 3.75rem;
+    height: 60px;
     background-color: transparent;
     color: var(--aaaaaa, #AAA);
     font-family: Cormorant Upright;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     text-transform: capitalize;
-    padding-left: 1.25rem;
+    padding-left: 20px;
 }
 
 .news2 input::placeholder {
     color: var(--aaaaaa, #AAA);
     font-family: Cormorant Upright;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: .04rem;
+    letter-spacing: .64px;
     text-transform: capitalize;
 }
 
 .news2 button {
     color: var(--0-c-0-c-0-c, #0C0C0C);
     font-family: 'Cormorant Upright', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: .04rem;
-    line-height: 1.75rem;
+    letter-spacing: .64px;
+    line-height: 28px;
     background: var(--dcca-87, #DCCA87);
-    border: .0625rem solid var(--dcca-87, #DCCA87);
-    padding: .5rem 2rem;
+    border: 1px solid var(--dcca-87, #DCCA87);
+    padding: 8px 32px;
 
 }
 
@@ -1138,9 +1150,9 @@ nav ul li a {
 
 
 
-@media screen and (max-width:64rem) {
+@media screen and (max-width:1024px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     .topright a {
@@ -1152,20 +1164,19 @@ nav ul li a {
         padding: 0;
     }
 
+    /* 
     .ct-right img {
         width: 100%;
-    }
+    } */
 
-    .ct-right::after {
-        left: 1.25rem;
-    }
 
+    /* 
     .ct-right .ct-2 {
-        left: 3.75rem;
-    }
+        left: 60px;
+    } */
 
     .about .img {
-        width: 21.875rem;
+        width: 350px;
         left: 32%;
     }
 
@@ -1175,7 +1186,7 @@ nav ul li a {
 
     .about-left h2,
     .about-right h2 {
-        font-size: 3.25rem;
+        font-size: 52px;
     }
 
     .about-right p,
@@ -1188,51 +1199,51 @@ nav ul li a {
     }
 
 
-
+    /* 
     .t-special22 img {
         height: 50vh
-    }
+    } */
 
 
 
     .men1 .top {
-        gap: 24px;
+        gap: 1.5rem;
     }
 
     .men1 .top h2,
     .men1 .top h3 {
         font-weight: 500;
-        font-size: 1.125rem;
+        font-size: 18px;
     }
 
     .t-special1 h2 {
-        font-size: 3.375rem
+        font-size: 54px
     }
 
     .t-special21,
     .t-special23 {
-        gap: 32px;
+        gap: 2rem;
     }
 
     .chef-main {
         width: 100%;
-        gap: 64px;
+        gap: 4rem;
     }
 
 
 
 
     .chef-right .right1 h3 {
-        font-size: 2.8125rem;
+        font-size: 45px;
         font-weight: 400;
     }
 
     .chef-right .right4 {
-        font-size: 3.125rem
+        font-size: 50px
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
     .dropdown {
         display: block;
     }
@@ -1252,26 +1263,27 @@ nav ul li a {
 
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:36rem) {
     header {
-        padding: 1.5625rem 1.875rem;
-        height: 100px;
+        padding: 25px 30px;
+        height: 6.25rem;
     }
 
     header h1 {
-        font-size: 38px;
+        font-size: 2.375rem;
         font-weight: 500;
     }
 
     .main {
-        padding: 15px 1.875rem 0
+        padding: .9375rem 30px 0;
     }
 
     .center-top {
         flex-direction: column;
         justify-content: center;
-        gap: 3.125rem;
+        gap: 50px;
         height: auto;
+        padding: 1.25rem 0rem
     }
 
     .ct-left {
@@ -1286,16 +1298,17 @@ nav ul li a {
 
     .ct-right {
         width: 100%;
+
     }
 
     .ct-left h3,
     .ct-left p {
         text-align: center;
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .ct-left p {
-        font-size: .875rem
+        font-size: 14px
     }
 
     .ct-right img {
@@ -1304,12 +1317,25 @@ nav ul li a {
         width: 100%;
     }
 
-    .ct-right::after {
+    .ct-right ::after {
         display: none;
     }
 
+    .ct-right .ct-2 {
+        left: 15%
+    }
+
+    .ct-right .ct-1 {
+        position: absolute;
+        width: 90%;
+        height: 80%;
+        z-index: -4;
+        left: -5%;
+        bottom: -5%;
+    }
+
     .about {
-        padding: 20px 30px;
+        padding: 1.25rem 1.875rem;
         flex-direction: column;
     }
 
@@ -1317,8 +1343,8 @@ nav ul li a {
     .about-right {
         align-items: center;
         width: 100%;
-        gap: 1rem;
-        padding: 20px 0;
+        gap: 16px;
+        padding: 1.25rem 0;
         height: 33%;
     }
 
@@ -1335,7 +1361,7 @@ nav ul li a {
 
     .about-center img {
         padding: 0;
-        width: 4.375rem;
+        width: 70px;
         height: 80%;
 
     }
@@ -1346,17 +1372,17 @@ nav ul li a {
     }
 
     .t-special {
-        padding: .625rem 1.875rem;
+        padding: 1.25rem 1.875rem;
         height: auto;
     }
 
     .t-special1 {
         height: auto;
-        padding-bottom: 60px;
+        padding-bottom: 3.75rem;
     }
 
     .t-special h2 {
-        font-size: 44px
+        font-size: 2.75rem
     }
 
 
@@ -1369,13 +1395,13 @@ nav ul li a {
     }
 
     .chef-word {
-        padding: .625rem 1.875rem;
+        padding: 1.25rem 1.875rem;
         height: auto;
     }
 
     .chef-main {
         flex-direction: column;
-        gap: 3.75rem;
+        gap: 60px;
         height: 100vh
     }
 
@@ -1392,25 +1418,25 @@ nav ul li a {
     .chef-left .img11 {
         width: 50%;
         height: 50%;
-        top: 10%;
+        top: 0%;
         right: 18%;
     }
 
     .chef-left .img12 {
         width: 50%;
         height: 50%;
-        bottom: 10%;
+        bottom: 0%;
         left: 18%;
     }
 
     .chef-right {
         width: 100%;
-        gap: 1.125rem;
+        gap: 18px;
         height: auto;
     }
 
     .chef-right .right1 h3 {
-        font-size: 38px;
+        font-size: 2.375rem;
     }
 
     .video {
@@ -1423,9 +1449,9 @@ nav ul li a {
     }
 
     .award-main {
-        padding: 10px 20px;
+        padding: .625rem 1.25rem;
         flex-direction: column;
-        gap: 30px;
+        gap: 1.875rem;
         height: 90%;
     }
 
@@ -1435,12 +1461,12 @@ nav ul li a {
     }
 
     .award12 {
-        gap: 24px;
+        gap: 1.5rem;
     }
 
     .award12 img {
-        width: 50px;
-        height: 50px;
+        width: 3.125rem;
+        height: 3.125rem;
     }
 
     .award2 {
@@ -1452,28 +1478,28 @@ nav ul li a {
         width: 50%;
         height: 50%;
         border-radius: 30% 0;
-        padding: 20px
+        padding: 1.25rem
     }
 
     .slider {
         flex-direction: column;
         padding-left: 0;
-        gap: 2rem;
-        padding: 30px 0;
+        gap: 32px;
+        padding: 1.875rem 0;
     }
 
     .brief {
         width: auto;
-        padding: 20px;
+        padding: 1.25rem;
         height: 50%;
     }
 
     .brief .top h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .brief .top h3 {
-        font-size: 2rem
+        font-size: 32px
     }
 
     .merge {
@@ -1487,7 +1513,11 @@ nav ul li a {
 
     .find {
 
-        gap: 30px
+        gap: 1.875rem
+    }
+
+    .base {
+        height: 70%
     }
 
     .find-us {
@@ -1499,7 +1529,7 @@ nav ul li a {
     }
 
     .ft-main {
-        gap: 1.5rem;
+        gap: 24px;
 
         height: 100vh
     }
@@ -1507,14 +1537,14 @@ nav ul li a {
     .ft-main .main-top {
         flex-direction: column;
         height: auto;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .ft-left,
     .ft-mid {
         width: 100%;
-        gap: 1rem;
-        padding: 0px 40px;
+        gap: 16px;
+        padding: 0rem 2.5rem;
         height: auto;
     }
 
@@ -1526,7 +1556,7 @@ nav ul li a {
 
     .ft-left h2,
     .ft-mid h2 {
-        font-size: 24px
+        font-size: 1.5rem
     }
 
     .ft-mid2 p {
@@ -1539,12 +1569,12 @@ nav ul li a {
     .ft-mid2 p,
     .ft-right h2,
     .ft-right2 h3 {
-        font-size: 12px
+        font-size: .75rem
     }
 
     /*  .ft-right h2,
          .ft-right2 h3 {
-             font-size: 12px
+             font-size: .75rem
          } */
 
     /*  .main-bottom {
@@ -1562,13 +1592,13 @@ nav ul li a {
  */
     .newsletter {
         height: 20%;
-        padding: 25px 10px;
-        gap: 15px;
-        top: -5%;
+        padding: 1.5625rem .625rem;
+        gap: .9375rem;
+        top: -7%;
     }
 
     .news1 {
-        gap: .5rem;
+        gap: 8px;
     }
 
     .news11 {
@@ -1576,16 +1606,16 @@ nav ul li a {
     }
 
     .news11 h3 {
-        font-size: 18px
+        font-size: 1.125rem
     }
 
     .news2 input {
-        height: 35px;
+        height: 2.1875rem;
     }
 
     .news2 button {
         width: 25%;
-        font-size: 8px;
+        font-size: .5rem;
         padding: 0;
         ;
     }

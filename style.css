@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #0C0B08;
     width: 100%;
@@ -1280,6 +1284,7 @@ nav ul li a {
 
     nav.active {
         left: 0;
+        transition: 2s
     }
 
 }
